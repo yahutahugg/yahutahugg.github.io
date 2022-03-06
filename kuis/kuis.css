@@ -141,6 +141,10 @@ button:focus {
   .formula-section {
       display: none;
   }
+  
+  quiz {
+    display: none;
+  }
 
   .phone-development {
       display: inline;
