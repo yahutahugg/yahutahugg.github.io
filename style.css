@@ -171,7 +171,7 @@ nav ul li a {
     /* rumus */
 .formula-section {
     display: inline-block;
-    height: 35vh;
+    height: 40vh;
     align-items: top;
     
 }
@@ -186,7 +186,6 @@ nav ul li a {
 }
 
 .formula-section ul {
-    list-style: none;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 20px;
@@ -198,6 +197,10 @@ nav ul li a {
 
 .formula-section ul li {
     margin: 16px 0;
+}
+
+.phone-development {
+    display: none;
 }
 
 /* footer */
@@ -232,7 +235,44 @@ footer .links-container {
 
 @media only screen and (max-width: 600px) {
 
-    nav {
+    header {
+        display: none;
+    }
+
+    .hero-section {
+        display: none;
+    }
+
+    .formula-section {
+        display: none;
+    }
+
+    .phone-development {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .phone-development h1 {
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-size: 40px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .phone-development p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        color: #000000;
+    }
+
+    footer {
+        display: none;
+    }
+
+    /* nav {
         justify-content: flex-start;
     }
 
@@ -242,7 +282,7 @@ footer .links-container {
 
     .hero-section {
         align-items: top;
-        height: 80vh;
+        height: 70vh;
     }
 
     .hero-section .left {
@@ -312,5 +352,5 @@ footer .links-container {
 
     footer .links-container .random {
         display: none;
-    }
-  }
+    }*/
+  } 
