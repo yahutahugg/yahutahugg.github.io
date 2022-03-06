@@ -82,7 +82,7 @@ nav ul li a {
 /* calculator */
 .hero-section {
     display: flex;
-    height: 40vh;
+    height: 70vh;
     width: 100%;
     align-items: top;
     justify-content: space-between;
@@ -171,7 +171,7 @@ nav ul li a {
     /* rumus */
 .formula-section {
     display: inline-block;
-    height: 25vh;
+    height: 35vh;
     align-items: top;
     
 }
@@ -242,7 +242,7 @@ footer .links-container {
 
     .hero-section {
         align-items: top;
-        height: 70vh;
+        height: 80vh;
     }
 
     .hero-section .left {
