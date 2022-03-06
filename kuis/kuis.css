@@ -122,3 +122,50 @@ button:focus {
   outline: none;
   background-color: #FF9900;
 }
+
+
+.phone-development {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+  header {
+      display: none;
+  }
+
+  .hero-section {
+      display: none;
+  }
+
+  .formula-section {
+      display: none;
+  }
+
+  .phone-development {
+      display: inline;
+      width: 80%;
+      height: 100vh;
+  }
+
+  .phone-development h1 {
+      font-family: "Raleway", sans-serif;
+      font-weight: 600;
+      font-size: 30px;
+      text-align: center;
+      color: #000000;
+      margin-top: 30vh;
+  }
+
+  .phone-development p {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      color: #000000;
+      text-align: center;
+  }
+
+  footer {
+      display: none;
+  }
+}
