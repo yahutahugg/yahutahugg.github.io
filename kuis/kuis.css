@@ -146,6 +146,10 @@ button:focus {
     display: none;
   }
 
+  .quiz-container {
+    display: none;
+  }
+
   .phone-development {
       display: inline;
       width: 80%;
