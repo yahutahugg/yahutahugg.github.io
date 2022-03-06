@@ -249,7 +249,7 @@ footer .links-container {
 
     .phone-development {
         display: inline-block;
-        width: 100%;
+        width: 80%;
         height: 100vh;
         align-items: center;
     }
@@ -257,7 +257,7 @@ footer .links-container {
     .phone-development h1 {
         font-family: "Raleway", sans-serif;
         font-weight: 600;
-        font-size: 40px;
+        font-size: 30px;
         text-align: center;
         color: #000000;
     }
@@ -265,7 +265,7 @@ footer .links-container {
     .phone-development p {
         font-family: "Poppins", sans-serif;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 15px;
         color: #000000;
         text-align: center;
     }
