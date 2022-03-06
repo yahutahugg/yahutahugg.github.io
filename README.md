@@ -1,8 +1,9 @@
 Tugas Informatika Tematik
 
-Christoper Jaya Permana
-Sebastian Ari
+Christoper Jaya Permana \n
+Sebastian Ari \n
 Yermeyahu Ariel Miwnary
-KACAY.
 
+
+KACAY.
 Kalkulator Ala Christ Ari Yahu.
