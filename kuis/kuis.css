@@ -150,6 +150,10 @@ button:focus {
     display: none;
   }
 
+  .quiz-header {
+    display: none;
+  }
+
   .phone-development {
       display: inline;
       width: 80%;
