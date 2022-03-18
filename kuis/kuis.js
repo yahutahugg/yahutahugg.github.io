@@ -1,35 +1,45 @@
+
+
 const quizData = [
     {
-        question: "Which language runs in a web browser?",
-        a: "Java",
-        b: "C",
-        c: "Python",
-        d: "JavaScript",
-        correct: "d",
-    },
-    {
-        question: "What does CSS stand for?",
-        a: "Central Style Sheets",
-        b: "Cascading Style Sheets",
-        c: "Cascading Simple Sheets",
-        d: "Cars SUVs Sailboats",
+        question: "Panjang alas suatu segitiga adalah 12 cm dan tingginya 5 cm. Luas segitiga itu adalah...cm²",
+        a: "15",
+        b: "30",
+        c: "36",
+        d: "24",
         correct: "b",
     },
     {
-        question: "What does HTML stand for?",
-        a: "Hypertext Markup Language",
-        b: "Hypertext Markdown Language",
-        c: "Hyperloop Machine Language",
-        d: "Helicopters Terminals Motorboats Lamborginis",
+        question: "Luas sebuah segitiga 135 cm² dan panjang alasnya 18 cm. Berapakah cm tingginya?",
+        a: "15",
+        b: "18",
+        c: "12",
+        d: "7,5",
         correct: "a",
     },
     {
-        question: "What year was JavaScript launched?",
-        a: "1996",
-        b: "1995",
-        c: "1994",
-        d: "none of the above",
-        correct: "b",
+        question: "Keliling segitiga ABC sama kaki adalah 60 cm. Jika AC=BC=18 cm, maka panjang AB adalah...cm",
+        a: "20",
+        b: "22",
+        c: "23",
+        d: "24",
+        correct: "d",
+    },
+    {
+        question: "Pernyataan besaran yang tepat: \n 1. Massa = Turunan\n 2. Gaya = Pokok\n 3. Waktu = Pokok",
+        a: "1",
+        b: "2",
+        c: "3",
+        d: "Semua salah",
+        correct: "c",
+    },
+    {
+        question: "Kelompok besaran turunan adalah...",
+        a: "Massa, panjang, waktu dan kuat arus",
+        b: "Intensitas cahaya, jumlah zat, gaya, energi",
+        c: "Suhu, kuat arus, tekanan, volume",
+        d: "Momentum, kalor jenis, beda potensial dan daya",
+        correct: "d",
     },
 ];
 
@@ -96,3 +106,16 @@ submitBtn.addEventListener('click', () => {
         }
     }
 })
+
+// menu
+const menuIcon = document.querySelector(".menu-icon");
+const closeIcon = document.querySelector(".mobile-menu-container .close-icon");
+const mobileMenuContainer = document.querySelector(".mobile-menu-container");
+
+menuIcon.addEventListener("click", () => {
+    mobileMenuContainer.classList.add("active");
+});
+
+closeIcon.addEventListener("click", () => {
+    mobileMenuContainer.classList.remove("active");
+});
