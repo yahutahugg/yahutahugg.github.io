@@ -1,9 +1,2 @@
-Tugas Informatika Tematik
-
-Christoper Jaya Permana \n
-Sebastian Ari \n
-Yermeyahu Ariel Miwnary
-
-
-KACAY.
-Kalkulator Ala Christ Ari Yahu.
+# **Yahu's Profile**
+### Developed and Designed by Yahu.
