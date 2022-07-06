@@ -7,8 +7,8 @@
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
-    /* background-image: url(); */
-    /* background-size: cover; */
+    background-size: cover;
+    background-position: center;
 }
 
 .wrapper {
@@ -94,7 +94,8 @@ nav .theme.btn .light {
     right: 60px;
     padding: 12px;
     border-radius: 12px;
-    background: rgba(47, 76, 132, 0.85);
+    background: rgba(83, 134, 200, 0.3);
+    backdrop-filter: blur(2px);
     border: 1px solid #15202d7b;
     box-shadow: 6px 8px 8px -8px rgba(0, 0, 50, 0.6);
     transition: all 500ms ease;
@@ -103,7 +104,6 @@ nav .theme.btn .light {
 
 .date p {
     text-align: center;
-    color: #fff;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 12px;
@@ -112,6 +112,18 @@ nav .theme.btn .light {
 .date p#day {
     font-weight: 600;
     font-size: 15px;
+}
+
+.date .day {
+    color: #fff;
+}
+
+.date .ddmmyy {
+    color: #fff;
+}
+
+.date .clock {
+    color: #fff;
 }
 
 .fill {
@@ -125,6 +137,7 @@ nav .theme.btn .light {
 .hero .profile {
     margin: 35px 0;
 }
+
 .hero .profile p {
     text-align: center;
     margin: 5px 0 0;
@@ -146,8 +159,8 @@ nav .theme.btn .light {
 .links-content {
     padding: 10px;
     border-radius: 10px;
-    /* background-color: linear-gradient(to bottom right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.8)); */
-    background-color: rgba(68, 117, 181, 0.3);
+    /* background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.2)); */
+    background: rgba(83, 134, 200, 0.3);
     backdrop-filter: blur(2px);
     width: 70%;
     margin: 5px auto 25px;
@@ -193,7 +206,7 @@ footer p {
 
 @media only screen and (max-width: 780px) {
     .wrapper {
-        margin: 0 50px;
+        margin: 0 25px;
     }
 
     .links-content {
@@ -202,13 +215,26 @@ footer p {
 
     .date {
         width: 30%;
-        top: 4px;
+        top: 5px;
         margin: 0 35%;
         right: 0;
         padding: 0;
         background: none;
         border: none;
         box-shadow: none;
+        backdrop-filter: none;
+    }
+    
+    body .date .day p#day {
+        color: #fff;
+    }
+
+    body .date .ddmmyy p#ddmmyy {
+        color: #fff;
+    }
+
+    body .date .clock p#clock {
+        color: #fff;
     }
 
     .date.scrolled {
@@ -222,5 +248,135 @@ footer p {
 
     .date p#date {
         font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .date {
+        transform: translateX(28px);
+    }
+
+    .date {
+        top: 9px;
+    }
+
+    .date.scrolled {
+        top: 26px;
+    }
+
+    .date p {
+        font-size: 9px;
+    }
+
+    .date p#date {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .fill {
+        height: 96px;
+    }
+
+    nav .logo {
+        font-size: 50px;
+    }
+
+    nav .theme.btn img {
+        height: 42px;
+    }
+    
+    nav .theme.btn .dark {
+        height: 46px;
+    }
+    
+    nav .theme.btn .light {
+        height: 46px;
+    }
+
+    .date {
+        top: 130px;
+    }
+
+    .date p {
+        font-size: 15px;
+    }
+
+    .date p#day {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    .hero .profile p {
+        font-size: 26px;
+    }
+
+    .hero .profile .subtitle {
+        font-size: 15px;
+    }
+
+    .links-content a {
+        font-size: 23px;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .fill {
+        height: 133px;
+    }
+
+    nav .logo {
+        font-size: 75px;
+    }
+
+    nav .theme.btn img {
+        height: 60px;
+    }
+    
+    nav .theme.btn .dark {
+        height: 64px;
+    }
+    
+    nav .theme.btn .light {
+        height: 64px;
+    }
+
+    .date {
+        top: 160px;
+    }
+
+    .date p {
+        font-size: 20px;
+    }
+
+    .date p#day {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 65px;
+    }
+
+    .hero .profile p {
+        font-size: 40px;
+    }
+
+    .hero .profile .subtitle {
+        font-size: 20px;
+    }
+
+    .links-content a {
+        font-size: 36px;
+    }
+
+    footer p {
+        font-size: 25px;
     }
 }

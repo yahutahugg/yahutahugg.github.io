@@ -23,6 +23,7 @@ light.addEventListener("click", () => {
     light.style.display="none";
     dark.style.display="block";
     document.body.style.backgroundColor="#1E2E3E";
+    document.body.style.backgroundImage="url(764967.png)";
     linkss[0].style.color="#fff";
     linkss[1].style.color="#fff";
     linkss[2].style.color="#fff";
@@ -30,12 +31,16 @@ light.addEventListener("click", () => {
     linkss[4].style.color="#fff";
     profile.style.color="#fff";
     linksCard.style.color="#fff";
+    document.querySelector(".day").style.color="#fff";
+    document.querySelector(".ddmmyy").style.color="#fff";
+    document.querySelector(".clock").style.color="#fff";
 });
 
 dark.addEventListener("click", () => {
     dark.style.display="none";
     light.style.display="block";
     document.body.style.backgroundColor="#E1FBFF";
+    document.body.style.backgroundImage="url(765121.png)";
     linkss[0].style.color="#000";
     linkss[1].style.color="#000";
     linkss[2].style.color="#000";
@@ -43,6 +48,9 @@ dark.addEventListener("click", () => {
     linkss[4].style.color="#000";
     profile.style.color="#000";
     linksCard.style.color="#000";
+    document.querySelector(".day").style.color="#000";
+    document.querySelector(".ddmmyy").style.color="#000";
+    document.querySelector(".clock").style.color="#000";
 });
 
 document.body.onload = startTime();
