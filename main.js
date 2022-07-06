@@ -29,6 +29,8 @@ light.addEventListener("click", () => {
     linkss[2].style.color="#fff";
     linkss[3].style.color="#fff";
     linkss[4].style.color="#fff";
+    linkss[5].style.color="#fff";
+    linkss[6].style.color="#fff";
     profile.style.color="#fff";
     linksCard.style.color="#fff";
     document.querySelector(".day").style.color="#fff";
@@ -46,6 +48,8 @@ dark.addEventListener("click", () => {
     linkss[2].style.color="#000";
     linkss[3].style.color="#000";
     linkss[4].style.color="#000";
+    linkss[5].style.color="#000";
+    linkss[6].style.color="#000";
     profile.style.color="#000";
     linksCard.style.color="#000";
     document.querySelector(".day").style.color="#000";
@@ -75,6 +79,6 @@ function startTime() {
   };
   
   function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    if (i < 10) {i = "0" + i};
     return i;
   };
