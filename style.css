@@ -97,6 +97,8 @@ nav .theme.btn .light {
     background: rgba(47, 76, 132, 0.85);
     border: 1px solid #15202d7b;
     box-shadow: 6px 8px 8px -8px rgba(0, 0, 50, 0.6);
+    transition: all 500ms ease;
+    z-index: 101;
 }
 
 .date p {
@@ -199,7 +201,19 @@ footer p {
     }
 
     .date {
-        right: 30px;
+        width: 30%;
+        top: 4px;
+        margin: 0 35%;
+        right: 0;
+        padding: 0;
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+
+    .date.scrolled {
+        top: 23px;
+        transition: all 500ms ease;
     }
 
     .date p {

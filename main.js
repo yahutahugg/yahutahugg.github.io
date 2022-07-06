@@ -1,12 +1,15 @@
 const header = document.querySelector("header");
 const nav = document.querySelector("nav");
+const dateBar = document.querySelector(".date");
 window.addEventListener("scroll", () => {
     if (window.pageYOffset > 30) {
         header.classList.add("scrolled");
         nav.classList.add("scrolled");
+        dateBar.classList.add("scrolled");
     } else {
         header.classList.remove("scrolled");
         nav.classList.remove("scrolled");
+        dateBar.classList.remove("scrolled");
     }
 });
 
