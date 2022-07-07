@@ -7,8 +7,7 @@
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
-    background-size: cover;
-    background-position: center;
+    background-color: #CFF1E7;
 }
 
 .wrapper {
@@ -16,367 +15,572 @@ body {
     margin: 0 100px;
 }
 
-h2 {
+.wrapper h2 {
     text-align: center;
-    font-family: "Poppins", sans-serif;
+    margin: 10px 0;
     font-size: 35px;
-    font-weight: 600;
-    margin: 0;
+    padding: 15px 0;
 }
 
-p {
-    margin: 0;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 500;
+.wrapper h3 {
+    margin: 10px 0;
+    font-size: 25px;
 }
 
 header {
-    position: fixed;
+    padding: 15px 0;
     width: 100%;
-    background: rgba(47, 76, 132, 1);
+    background: #383431;
+    position: fixed;
     top: 0;
     transition: all 500ms ease;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 6px 8px 8px -8px rgba(0, 0, 50, 0.6);
     z-index: 100;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-}
-
 header.scrolled {
-    border-radius: 10px;
-    background: rgba(47, 76, 132, 0.85);
-    backdrop-filter: blur(3px);
-    border: 1px solid #15202d7b;
+    background: #383431E5;
+    padding: 7px 0;
+    border-radius: 0 0 8px 8px;
     transition: all 500ms ease;
-    width: 92%;
-    margin: 0 4%;
-    top: 20px;
-    box-shadow: 8px 12px 10px -8px rgba(0, 0, 50, 0.8);
+    box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.5);
 }
 
-nav.scrolled {
-    padding: 7px;
+nav {
+    margin: 0 25px;
 }
 
 nav .logo {
-    font-family: "Poppins", sans-serif;
-    font-size: 30px;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
-    color: #fff;
+    font-size: 50px;
 }
 
-nav .theme.btn {
-    display: flex;
-    align-items: center;
+nav .logo a {
+    text-decoration: none;
+    color: #F1F1F1;
 }
 
-nav .theme.btn img {
-    height: 32px;
-    margin: 2px 0;
+section.filler {
+    background: #72C2A9;
+    height: 89px;
 }
 
-nav .theme.btn .dark {
-    height: 36px;
-}
-
-nav .theme.btn .light {
-    height: 36px;
-}
-
-.date {
-    position: fixed;
-    top: 100px;
-    right: 60px;
-    padding: 12px;
-    border-radius: 12px;
-    background: rgba(83, 134, 200, 0.3);
-    backdrop-filter: blur(2px);
-    border: 1px solid #15202d7b;
-    box-shadow: 6px 8px 8px -8px rgba(0, 0, 50, 0.6);
-    transition: all 500ms ease;
-    z-index: 101;
-}
-
-.date p {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-}
-
-.date p#day {
-    font-weight: 600;
-    font-size: 15px;
-}
-
-.date .day {
-    color: #fff;
-}
-
-.date .ddmmyy {
-    color: #fff;
-}
-
-.date .clock {
-    color: #fff;
-}
-
-.fill {
-    height: 66px;
+section.hero-section {
+    background: #72C2A9;
+    /* background-image: url(bghero.png);
+    background-size: cover; */
 }
 
 .hero {
-    margin: 25px 0 50px;
+    padding: 50px 0;
 }
 
-.hero .profile {
-    margin: 35px 0;
+.heroo {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px 0;
+    margin: 0 auto;
 }
 
-.hero .profile p {
-    text-align: center;
-    margin: 5px 0 0;
-    font-size: 20px;
-}
-
-.hero .profile .subtitle {
-    margin: 0 0 5px;
-    text-align: center;
-    font-family: "Quicksand", sans-serif;
-    font-size: 11px;
-    font-weight: 300;
-}
-
-.hero .links-card {
-    margin: 35px 0;
-}
-
-.links-content {
+.heroo .text {
+    margin: auto 0;
     padding: 10px;
-    border-radius: 10px;
-    /* background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.2)); */
-    background: rgba(83, 134, 200, 0.3);
-    backdrop-filter: blur(2px);
-    width: 70%;
-    margin: 5px auto 25px;
-    text-align: center;
-    border: 1px solid rgba(0, 0, 50, 0.3);
-    box-shadow: 6px 8px 8px -6px rgba(0, 0, 50, 0.6);
+    text-align: right;
 }
 
-.links-content a {
-    text-decoration: none;
-    font-family: "Quicksand", sans-serif;
-    font-size: 18px;
+
+.heroo h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    margin: 0;
+    margin-bottom: 10px;
+
+    color: #563B2A;
+}
+
+.heroo p {
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+
+    color: #563B2A;
 }
 
-.links-content a .media {
+.heroo p a {
+    text-decoration: none;
+    color: #563B2A;
+    cursor: text;
+}
+
+.heroo .img {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 160%;
 }
 
-.links-content a .media img {
-    height: 24px;
-    margin: auto 7px auto 0;
+.heroo .img img {
+    margin: 10px;
+    width: 95%;
+}
+
+.hero .line {
+    width: 100%;
+    height: 10px;
+    background: #BD9965;
+    border-radius: 10px;
+}
+
+.heroo .line .line1 {
+    position: absolute;
+    margin-top: 48px;
+}
+
+.hero .line .line2 {
+    position: absolute;
+    margin-bottom: 48px;
+}
+
+section.video-section {
+    background: #2F433D;
+    padding: 25px 0;
+}
+
+.video {
+    padding: 25px 25px;
+    background: #72C2A9;
+}
+
+.video iframe {
+    width: 100%;
+    height: 567px;
+    z-index: 10;
+}
+
+section.profile-container {
+    padding: 25px 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* height: 485px; */
+    /* background: #72C2A9; */
+}
+
+section.profile-container .wrapper h2 {
+    color: #2F433D;
+}
+
+.profile .card .image {
+    height: 140px;
+    width: 140px;
+    border-radius: 30px;
     padding: 2px;
-    background-color: #15202d9b;
-    border-radius: 3px;
-    border: 1px solid rgba(0, 0, 50, 0.5);
+    background: #EC9B26;
 }
 
-footer {
-    padding: 25px;
-    background: #15202d;
-    bottom: 0;
+.profile .card .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 2px solid #DED6C8;
 }
 
-footer p {
-    color: #fff;
+.profile .card .media-icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile .card .media-icons img {
+    width: 25px;
+    color: #563B2A;
+}
+
+.profile .card {
+    background: #DED6C8;
+    border-radius: 15px;
+    margin: 15px auto;
+    box-shadow: 5px 5px #BD9965;
+    margin-bottom: 25px;
+}
+
+.profile .card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.profile .card .name-contact {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+
+    color: #563B2A;
+    margin-top: 15px;
+}
+
+.profile .card .name-contact .name {
     font-family: "Poppins", sans-serif;
-    font-size: 14px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.profile .card .name-contact .called {
+    margin-top: 5px;
+}
+.profile .card .name-contact .wanumber {
+    margin-top: 5px;
+}
+.profile .card .name-contact .hbd {
+    margin-top: 5px;
+}
+.profile .card .name-contact .aim {
+    margin-top: 5px;
+}
+.profile .card .name-contact .message {
+    margin-top: 5px;
+}
+.profile .card .name-contact .aword {
+    margin-top: 5px;
+}
+.profile .card .name-contact .subtitle {
+    margin-bottom: 5px;
+    font-size: 10px;
     font-weight: 400;
 }
 
-@media only screen and (max-width: 780px) {
-    .wrapper {
-        margin: 0 25px;
+.swiper {
+    width: 90%;
+    height: 100%;
+    padding: 20px 10px;
+}
+
+.swiper-wrapper {
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.profile .card .media-icons .popoutsm button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+section.photo-section {
+    background-color: #2F433D;
+    padding: 25px 0;
+}
+
+section.photo-section .wrapper h2 {
+    color: #CFF1E7;
+}
+
+.photos-container {
+    padding: 25px;
+}
+
+.photos-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #72C2A9;
+}
+
+.photos-content .photos {
+    padding: 10px;
+    display: block;
+}
+
+.photos-content.more {
+    display: none;
+}
+
+.photos-content p {
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    color: #2F433D;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.photos-content img {
+    padding: 5px;
+    background: #2F433D;
+    margin: auto;
+    width: 100%;
+}
+
+.photo-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.photo-button button {
+    padding: 15px 20px;
+    width: 70%;
+    background: #DED6C8;
+    border: 0;
+    margin: 10px;
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #563B2A;
+}
+
+.photo-button button#more-photo1 {
+    display: block;
+}
+
+.photo-button button#more-photo2 {
+    display: none;
+}
+
+.photo-button button#more-photo3 {
+    display: none;
+}
+
+.photo-button button#more-photo4 {
+    display: none;
+}
+
+.photo-button button#more-photo5 {
+    display: none;
+}
+
+.photo-button button#less-photo {
+    display: none;
+}
+
+section.timeline-section {
+    padding: 25px 0;
+}
+
+section.timeline-section .wrapper h2 {
+    color: #2F433D;
+}
+
+section.timeline-section .wrapper h3 {
+    color: #2F433D;
+    text-align: center;
+}
+
+.timeline-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.timeline-content {
+    margin: 10px 0;
+}
+
+.timeline-container {
+    display: grid;
+    grid-template-columns: 6fr 7fr;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #2F433D;
+    padding: 0 25px;
+    margin: 10px 0;
+}
+
+.timeline-container .date {
+    text-align: right;
+    margin: 0 10px;
+}
+
+.timeline-container .timeline {
+    text-align: left;
+    margin: 0 10px;
+}
+
+footer {
+    background: #383431;
+    padding: 50px 0;
+    color: #F1F1F1;
+}
+
+footer .links-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+footer .wrapper h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin: 10px 0;
+    color: #72C2A9;
+}
+
+footer ul {
+    margin: 10px 0;
+}
+
+footer ul li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #F1F1F1;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 13px;
+    opacity: 0.75;
+}
+
+@media only screen and (max-width: 1050px) {
+    .heroo h1 {
+        font-size: 35px;
     }
 
-    .links-content {
+    .heroo p {
+        font-size: 15px;
+    }
+
+    .video iframe {
+        height: 432px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .wrapper {
+        margin: 0 50px;
+    }
+
+    .wrapper h2 {
+        font-size: 30px;
+        padding: 10px 0;
+    }
+
+    nav .logo {
+        font-size: 35px;
+    }
+
+    section.filler {
+        height: 71px;
+    }
+
+    .heroo {
+        display: block;
+        width: 100%;
+        padding: 25px 0;
+    }
+
+    .heroo h1 {
+        text-align: center;
+    }
+
+    .heroo .text {
+        width: 100%;
+        text-align: left;
+    }
+
+    .heroo .img {
+        width: 100%;
+    }
+
+    .heroo .img img {
         width: 80%;
     }
 
-    .date {
-        width: 30%;
-        top: 5px;
-        margin: 0 35%;
-        right: 0;
-        padding: 0;
-        background: none;
-        border: none;
-        box-shadow: none;
-        backdrop-filter: none;
-    }
-    
-    body .date .day p#day {
-        color: #fff;
+    .video iframe {
+        height: 288px;
     }
 
-    body .date .ddmmyy p#ddmmyy {
-        color: #fff;
+    .profile .card {
+        margin-bottom: 40px;
     }
 
-    body .date .clock p#clock {
-        color: #fff;
+    .timeline-wrapper {
+        grid-template-columns: auto;
     }
 
-    .date.scrolled {
-        top: 23px;
-        transition: all 500ms ease;
-    }
-
-    .date p {
-        font-size: 11px;
-    }
-
-    .date p#date {
-        font-size: 14px;
+    footer .links-container {
+        grid-template-columns: auto auto;
     }
 }
 
-@media only screen and (max-width: 400px) {
-    .date {
-        transform: translateX(28px);
+@media only screen and (max-width: 700px) {
+
+    .heroo h1 {
+        font-size: 30px;
     }
 
-    .date {
-        top: 9px;
+    .photos-content {
+        grid-template-columns: auto;
     }
 
-    .date.scrolled {
-        top: 26px;
+    .timeline-container {
+        display: block;
     }
 
-    .date p {
-        font-size: 9px;
+    .timeline-container .timeline {
+        margin: 0 25px 10px;
     }
 
-    .date p#date {
-        font-size: 11px;
+    .timeline-container .date {
+        text-align: left;
     }
 }
 
-@media only screen and (min-width: 1440px) {
-    .fill {
-        height: 96px;
-    }
+@media only screen and (max-width: 615px) {
 
-    nav .logo {
-        font-size: 50px;
-    }
-
-    nav .theme.btn img {
-        height: 42px;
-    }
-    
-    nav .theme.btn .dark {
-        height: 46px;
-    }
-    
-    nav .theme.btn .light {
-        height: 46px;
-    }
-
-    .date {
-        top: 130px;
-    }
-
-    .date p {
-        font-size: 15px;
-    }
-
-    .date p#day {
-        font-size: 18px;
-    }
-
-    h2 {
-        font-size: 45px;
-    }
-
-    .hero .profile p {
-        font-size: 26px;
-    }
-
-    .hero .profile .subtitle {
-        font-size: 15px;
-    }
-
-    .links-content a {
+    .wrapper h2 {
         font-size: 23px;
+        padding: 5px 0;
     }
 
-    footer p {
-        font-size: 18px;
+    .profile .card {
+        margin-bottom: 60px;
     }
 }
 
-@media only screen and (min-width: 2560px) {
-    .fill {
-        height: 133px;
+@media only screen and (max-width: 450px) {
+    nav {
+        margin: 0 0;
     }
 
-    nav .logo {
-        font-size: 75px;
+    .wrapper {
+        max-width: 100%;
     }
 
-    nav .theme.btn img {
-        height: 60px;
-    }
-    
-    nav .theme.btn .dark {
-        height: 64px;
-    }
-    
-    nav .theme.btn .light {
-        height: 64px;
+    .video iframe {
+        height: 153px;
     }
 
-    .date {
-        top: 160px;
+    .profile .card {
+        margin-bottom: 80px;
     }
+}
 
-    .date p {
-        font-size: 20px;
-    }
-
-    .date p#day {
-        font-size: 25px;
-    }
-
-    h2 {
-        font-size: 65px;
-    }
-
-    .hero .profile p {
-        font-size: 40px;
-    }
-
-    .hero .profile .subtitle {
-        font-size: 20px;
-    }
-
-    .links-content a {
-        font-size: 36px;
-    }
-
-    footer p {
-        font-size: 25px;
+@media only screen and (max-width: 267px) {
+    .profile .card {
+        margin-bottom: 100px;
     }
 }
